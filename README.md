@@ -13,7 +13,11 @@ It fuses **Zero‑Trust Verifier** with **QUITNLOCK deterministic locks**, produ
 - **ProofGate Combo**: Continuous identity verification fused with deterministic lock protocols  
 
 ---
+Releases ## 📦 Releases
 
+- **ProofGate v1.0.0**  
+  Published under GitHub Release [4801354](https://github.com/GDzubinskySnr/proofgate/releases/tag/v1.0.0)  
+  Includes capsule manifest, lineage seals, verification scripts, and licensing.
 ## 📂 Repository Structure
 - `capsule_manifest.json` → Canonical digest and ProofGate clause  
 - `LICENSE` → Open Source (Apache 2.0 + Sovereign Addendum)  
