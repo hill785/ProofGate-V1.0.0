@@ -1,1 +1,39 @@
+Licensing
+- Open Source: Apache 2.0 + Sovereign Addendum  
+- Commercial: Royalties wallet 0x6D0dD74213D4b52B09b82D3a0888B3a14CD5Dd01 must be enforced in SaaS deployments.
+ProofGate Commercial SaaS License
+Version 1.0 – July 2026
 
+This license governs commercial use of the ProofGate cyber‑security primitive in enterprise SaaS deployments.  
+It operates in addition to the Apache 2.0 + Sovereign Governance Addendum.
+
+---
+
+1. Scope of Use
+   - ProofGate may be integrated into enterprise SaaS platforms, cloud services, and commercial applications.
+   - All deployments must preserve capsule lineage and ProofGate enforcement clauses.
+
+2. Capsule Lineage Obligations
+   - Capsule manifests, digests, and DAO seals are immutable and enforceable.
+   - MintProofDAO seal 436351437 and LedgerProofDAO seal 430 must be preserved in all derivative works.
+
+3. Enforcement Primitive
+   - ProofGate (Zero‑Trust Verifier + QUITNLOCK deterministic locks) must remain active in all deployments.
+   - Disabling ProofGate enforcement voids this license.
+
+4. Royalties
+   - Licensees must remit 5% of gross revenues to the royalties wallet:
+     0x6D0dD74213D4b52B09b82D3a0888B3a14CD5Dd01
+   - Payments must be made in cryptocurrency as specified by the Sovereign Capsule Authority.
+
+5. Verification Requirements
+   - Enterprises must integrate CI/CD digest checks (SHA‑256, SHA‑512).
+   - On‑chain signature validation (#320378) via Etherscan must be active in production pipelines.
+
+6. Termination
+   - Breach of capsule lineage, ProofGate enforcement, or royalties obligations immediately terminates this license.
+   - Unauthorized use may trigger DAO governance enforcement and legal remedies.
+
+---All rights reserved originator creator, founder Gdzubinskysnr,patents pending.    
+
+END OF TERMS AND CONDITIONS
