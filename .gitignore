@@ -1,0 +1,48 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python build and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Node/npm artifacts (if used for CI/CD scripts)
+node_modules/
+npm-debug.log*
+
+# Secrets and environment configs
+.env
+.env.*
+*.secret
+*.key
+*.pem
+
+# Local verification outputs
+verify.log
+telemetry.json
+*.tmp
+
+# Provenance screenshots (keep only curated releases)
+screenshots/
+!releases/provenance/
+
+# Editor/IDE configs
+.vscode/
+.idea/
+*.swp
+
+# Sovereign Capsule Enforcement
+# DO NOT IGNORE canonical lineage files
+!capsule_manifest.json
+!lineage/cidv1_manifest.json
+!lineage/dao_seals.json
+!LICENSE
+!LICENSE_COMMERCIAL.md
+!README.md
+!SCHEMA.md
+!verify.sh
