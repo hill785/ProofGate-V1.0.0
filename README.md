@@ -20,6 +20,11 @@ ProofGate protocols are hardened for:
 - NIST AI RMF: Risk management + audit assurance
 - OWASP Agentic Top 10: Runtime enforcement against injection and over‑scoping
 # Sovereign Capsule Lineage Enforcement
+## Tombstone Notice
+Any APK builds claiming the name ProofGate are impostors.  
+ProofGate is a sovereign enforcement protocol, not an APK.  
+Unauthorized APKs are tombstoned under MintProofDAO seal 436351437 and LedgerProofDAO seal 430.
+
 
 ![ProofGate Verification](https://github.com/hill785/ProofGate/actions/workflows/verify.yml/badge.svg)
 ![Zeppelin Inspection](https://github.com/hill785/ProofGate/actions/workflows/zeppelin-inspection.yml/badge.svg)
