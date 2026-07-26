@@ -63,7 +63,7 @@ Legally and cryptographically enshrined under DAO seals.
 🚀 Usage
 
 - Clone the repo:  
-  git clone https://github.com/GDzubinskySnr/proofgate.git
+  git clone https://github.com/hill 785/GDzubinskySnr/proofgate.git
 
 - Run verification:  
   ./verify.sh
