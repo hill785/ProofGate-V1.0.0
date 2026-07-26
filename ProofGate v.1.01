@@ -1,1 +1,11 @@
 
+proofgate/
+├── capsule_manifest.json
+├── expected.sha256
+├── expected.sha512
+├── scripts/
+│   └── verify_capsule.sh
+├── .github/
+│   └── workflows/
+│       ├── verify.yml
+│       └── zeppelin-inspection.yml   ← new inspection workflow
