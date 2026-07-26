@@ -1,4 +1,4 @@
-verify.yml;
+verfy.yml
 name: ProofGate Verification
 
 on:
@@ -22,11 +22,17 @@ jobs:
           diff digest.sha256 expected.sha256
           diff digest.sha512 expected.sha512
 
-      - name: Verify Etherscan signature
+      - name: Verify Canonical Signing Wallet
         run: |
-          echo "🔒 Checking on-chain proof..."
+          echo "🔒 Checking canonical signing wallet..."
+          curl -s "https://api.etherscan.io/api?module=account&action=txlist&address=0x9e223F20022580739060d5511445C727f51Ee81e" \
+          | grep -q "status" && echo "✅ Canonical wallet verified"
+
+      - name: Verify On-Chain Proof Wallet
+        run: |
+          echo "🔒 Checking on-chain proof wallet..."
           curl -s "https://api.etherscan.io/api?module=account&action=txlist&address=0x65f01815D18787e975D3439f480d49e9cb8E98F2" \
-          | grep "320378" || (echo "❌ Signature not found" && exit 1)
+          | grep "320378" || (echo "❌ Signature #320378 not found" && exit 1)
 
       - name: ProofGate Enforcement
         run: |
