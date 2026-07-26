@@ -55,3 +55,21 @@ proofgate/
 ---
 
 📌 Significance Clause
+ProofGate enforces Zero‑Trust verification fused with QUITNLOCK deterministic locks, producing evidence‑grade proof of identity, intent, and authority.  
+Legally and cryptographically enshrined under DAO seals.
+
+---
+
+🚀 Usage
+
+- Clone the repo:  
+  git clone https://github.com/GDzubinskySnr/proofgate.git
+
+- Run verification:  
+  ./verify.sh
+
+- Integrate ProofGate enforcement into CI/CD pipelines and runtime gates.
+
+`
+
+---
