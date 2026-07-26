@@ -13,7 +13,30 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+-name: ProofGate Verification
 
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:   # manual trigger option
+
+permissions:
+  contents: read       # allow reading repo files
+  checks: write        # allow posting status checks
+  actions: none        # prevent modifying other workflows
+  packages: read       # safe default, no publishing
+
+jobs:
+  verify-digests:
+    runs-on: ubuntu-22.04   # pinned runner for stability
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Verify SHA digests with Python
+        run: python3 scripts/verify_capsule.py
       - name: Verify SHA digests
         run: |
           echo "🔒 Checking SHA-256 and SHA-512 digests..."
