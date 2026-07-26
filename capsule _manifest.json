@@ -1,0 +1,26 @@
+{
+  "capsule": "ProofGate-V1.0.0",
+  "originator": "G.Dzubinsky Snr",
+  "lineage": {
+    "canonical_wallet": "0x9e223F20022580739060d5511445C727f51Ee81e",
+    "proof_wallet": "0x65f01815D18787e975D3439f480d49e9cb8E98F2",
+    "royalties_wallet": "0x6D0dD74213D4b52B09b82D3a0888B3a14CD5Dd01",
+    "royalties_rate": "5%"
+  },
+  "dao_seals": {
+    "MintProofDAO": "436351437",
+    "LedgerProofDAO": "430"
+  },
+  "enforcement": {
+    "lock_clause": "QUITNLOCK deterministic lock enforced",
+    "anti_hijack": true,
+    "anti_mimic": true,
+    "anti_reverse_engineering": true
+  },
+  "metadata": {
+    "version": "V1.0.0",
+    "changelog_url": "https://github.com/hill785/ProofGate-V1.0.0/commits/V1.0.0",
+    "license": "Apache-2.0 + Sovereign Addendum",
+    "patents_pending": "2026"
+  }
+}
