@@ -35,6 +35,18 @@ screenshots/
 .vscode/
 .idea/
 *.swp
+# Block local compiled native binaries completely
+verify_capsule
+scripts/verify_capsule
+
+# Block internal testing engine locks and concurrency counters
+.swarm_lock_matrix/
+.swarm_matrix.maintenance
+/tmp/.swarm_lock_matrix/
+/tmp/.swarm_matrix.maintenance
+
+# Ignore volatile environment test trackers
+.canary_*
 
 # Sovereign Capsule Enforcement
 # DO NOT IGNORE canonical lineage files
