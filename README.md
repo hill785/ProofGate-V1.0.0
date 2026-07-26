@@ -62,7 +62,19 @@ Releases ## 📦 Releases
 - `/badges` → DAO seal badges and QR‑coded capsule flyer  
 - `/releases` → Tagged artifacts and provenance records  
 
----
+---## 💳 Wallets
+
+- **Signing Wallet (Canonical)**: `0x9e223F20022580739060d5511445C727f51Ee81e`  
+  Used for capsule signature verification and lineage enforcement.
+
+- **Signing Wallet (On‑Chain Proof)**: `0x65f01815D18787e975D3439f480d49e9cb8E98F2`  
+  Used for verified Etherscan signature (#320378).
+
+- **Royalties Wallet**: `0x6D0dD74213D4b52B09b82D3a0888B3a14CD5Dd01`  
+  Commercial SaaS deployments must remit 5% royalties to this address.
+
+> ⚠️ **Note**: Wallet addresses are public for verification and royalties.  
+> Private keys, seed phrases, and keystore files are never published and must remain confidential.
 
 ## 🛠 Verification
 
