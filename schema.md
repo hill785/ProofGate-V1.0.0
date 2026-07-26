@@ -44,3 +44,14 @@ proofgate/
 3. On‑Chain Proof
    - Signature ID 320378 must be validated via Etherscan.
    - Signing wallet 0x9e223F20022580739060d5511445C727f51Ee81e is canonical.
+4. Licensing
+   - Open Source: Apache 2.0 + Sovereign Addendum.
+   - Commercial SaaS: 5% royalties to wallet 0x6D0dD74213D4b52B09b82D3a0888B3a14CD5Dd01.
+
+5. QUITNLOCK Enforcement
+   - All sensitive functions must be gated by ProofGate enforcement.
+   - Disabling ProofGate voids licensing and lineage compliance.
+
+---
+
+📌 Significance Clause
