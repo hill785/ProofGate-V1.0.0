@@ -34,7 +34,20 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+-jobs:
+  zero-trust-verifier:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
+      - name: Run ZeroTrust verifier
+        run: |
+          python3 scripts/zero_trust_verify.py
+
+      - name: Enforce QUITNLOCK protocol
+        run: |
+          python3 scripts/quitnlock_enforce.py
       - name: Verify SHA digests with Python
         run: python3 scripts/verify_capsule.py
       - name: Verify SHA digests
