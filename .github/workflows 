@@ -26,7 +26,19 @@ jobs:
         run: |
           echo "🔒 Checking canonical signing wallet..."
           curl -s "https://api.etherscan.io/api?module=account&action=txlist&address=0x9e223F20022580739060d5511445C727f51Ee81e" \
-          | grep -q "status" && echo "✅ Canonical wallet verified"
+  -name: ProofGate Verification   # or Zeppelin Inspection
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:   # optional manual trigger
+
+permissions:
+  contents: read       # allow reading repo files
+  checks: write        # allow posting status checks
+        | grep -q "status" && echo "✅ Canonical wallet verified"
 
       - name: Verify On-Chain Proof Wallet
         run: |
