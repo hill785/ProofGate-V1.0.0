@@ -24,7 +24,17 @@ ProofGate protocols are hardened for:
 Any APK builds claiming the name ProofGate are impostors.  
 ProofGate is a sovereign enforcement protocol, not an APK.  
 Unauthorized APKs are tombstoned under MintProofDAO seal 436351437 and LedgerProofDAO seal 430.
+Tombstone Notice
+Any APK builds claiming the name ProofGate are impostors.  
+ProofGate is a sovereign enforcement protocol, not an APK.  
+Unauthorized APKs are tombstoned under MintProofDAO seal 436351437 and LedgerProofDAO seal 430.
 
+Revocation Hash (SHA‑512):
+`
+0xbc9811cceb039f360a65f460a0763a3c707e5b53dea2d6157ab1c0ffdd2be179f5eaab1f37ab8b7baae802934f4cb1fe235dbd0cf92db8e1d5c4045f498564ba
+`
+
+---
 
 ![ProofGate Verification](https://github.com/hill785/ProofGate/actions/workflows/verify.yml/badge.svg)
 ![Zeppelin Inspection](https://github.com/hill785/ProofGate/actions/workflows/zeppelin-inspection.yml/badge.svg)
