@@ -26,7 +26,7 @@ We prioritize vulnerabilities addressing core protection mechanics, specifically
 
 Please submit a detailed security report to our dedicated, out-of-band security operations address:
 
-📩 **security@proofgate.internal**
+📩 **security@gdzubinskysnr tutamail**
 
 ### Required Information
 To help us validate your report quickly, please include:
