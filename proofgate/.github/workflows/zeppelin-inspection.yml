@@ -1,0 +1,25 @@
+name: Zeppelin Inspection
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  inspect-zeppelin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Zeppelin container
+        run: |
+          docker run -d --name zeppelin apache/zeppelin:latest
+          sleep 30
+          docker logs zeppelin | tee zeppelin.log
+
+      - name: Inspect logs
+        run: |
+          grep -q "ERROR" zeppelin.log && exit 1 || echo "✅ No errors detected"
+          grep -q "InterpreterFactory" zeppelin.log && echo "✅ Interpreter started" || exit 1
