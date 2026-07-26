@@ -2,7 +2,11 @@
 
 **ProofGate** is a sovereign cyber‑security primitive: a gate that only opens when cryptographic proof is verified.  
 It fuses **Zero‑Trust Verifier** with **QUITNLOCK deterministic locks**, producing evidence‑grade proof of identity, intent, and authority.
+# Sovereign Capsule Lineage Enforcement
 
+![ProofGate Verification](https://github.com/hill785/ProofGate/actions/workflows/verify.yml/badge.svg)
+![Zeppelin Inspection](https://github.com/hill785/ProofGate/actions/workflows/zeppelin-inspection.yml/badge.svg)
+![ZeroTrust + QUITNLOCK Enforcement](https://github.com/hill785/ProofGate/actions/workflows/zero-trust.yml/badge.svg)
 ---## 📦 Capsule Digest
 
 ```json
