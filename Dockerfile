@@ -26,3 +26,35 @@ USER proofuser
 
 # Default execution entry point triggers the core unit test grid matrix
 ENTRYPOINT ["./scripts/unit_tests.sh"]
+
+docker-compose.yml
+version: '3.8'
+
+services:
+  # Node 1 acts as the master maintenance coordinator
+  proofgate-node-1:
+    build: .
+    volumes:
+      - shared-tmp-space:/tmp
+    environment:
+      - NODE_ID=1
+
+  # Node 2 acts as a concurrent actor feeding load into the lock dir
+  proofgate-node-2:
+    build: .
+    volumes:
+      - shared-tmp-space:/tmp
+    environment:
+      - NODE_ID=2
+
+  # Node 3 replicates an adversarial network cluster trying to trigger race conditions
+  proofgate-node-3:
+    build: .
+    volumes:
+      - shared-tmp-space:/tmp
+    environment:
+      - NODE_ID=3
+
+volumes:
+  # Shared data volume context simulating parallel cluster attachments for file locks
+  shared-tmp-space:
