@@ -2,6 +2,23 @@
 
 **ProofGate** is a sovereign cyber‑security primitive: a gate that only opens when cryptographic proof is verified.  
 It fuses **Zero‑Trust Verifier** with **QUITNLOCK deterministic locks**, producing evidence‑grade proof of identity, intent, and authority.
+## Institutional‑Grade Cybersecurity
+ProofGate enforces Zero‑Trust principles with:
+- 🔒 Deterministic consequence rails
+- 🛡 Cryptographic approvals and receipts
+- 📜 Immutable append‑only audit trails
+- 🔐 Privacy‑utility projection (GDPR/HIPAA aligned)
+## Military‑Grade Application Readiness
+ProofGate protocols are hardened for:
+- 🚨 QUITNLOCK lineage locks (anti‑hijack, anti‑reverse engineering)
+- ⚔️ Sovereign capsule enforcement
+- 🛰 Operational resilience under hostile conditions
+- 🛡 Compliance with defense‑grade audit requirements
+## Compliance Alignment
+- GDPR: Identifier tokenization and privacy filters
+- HIPAA: Protected health data handling
+- NIST AI RMF: Risk management + audit assurance
+- OWASP Agentic Top 10: Runtime enforcement against injection and over‑scoping
 # Sovereign Capsule Lineage Enforcement
 
 ![ProofGate Verification](https://github.com/hill785/ProofGate/actions/workflows/verify.yml/badge.svg)
