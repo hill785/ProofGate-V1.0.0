@@ -38,6 +38,9 @@ jobs:
           echo "🛡 MintProofDAO Seal: 436351437"
           echo "🛡 LedgerProofDAO Seal: 430"
       - name: ProofGate Enforcement
+-GITHUB_TOKEN:permissions:
+  contents: read
+  checks: write 
         run: |
    - name: Use secret
   run: echo "${{ secrets.MY_SECRET }}"       echo "✅ ProofGate enforcement active: Zero-Trust Verifier + QUITNLOCK deterministic locks"
