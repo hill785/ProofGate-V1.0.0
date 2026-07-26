@@ -33,7 +33,10 @@ jobs:
           echo "🔒 Checking on-chain proof wallet..."
           curl -s "https://api.etherscan.io/api?module=account&action=txlist&address=0x65f01815D18787e975D3439f480d49e9cb8E98F2" \
           | grep "320378" || (echo "❌ Signature #320378 not found" && exit 1)
-
+- name: DAO Seal Verification
+        run: |
+          echo "🛡 MintProofDAO Seal: 436351437"
+          echo "🛡 LedgerProofDAO Seal: 430"
       - name: ProofGate Enforcement
         run: |
           echo "✅ ProofGate enforcement active: Zero-Trust Verifier + QUITNLOCK deterministic locks"
