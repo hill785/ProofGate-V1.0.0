@@ -39,4 +39,5 @@ jobs:
           echo "🛡 LedgerProofDAO Seal: 430"
       - name: ProofGate Enforcement
         run: |
-          echo "✅ ProofGate enforcement active: Zero-Trust Verifier + QUITNLOCK deterministic locks"
+   - name: Use secret
+  run: echo "${{ secrets.MY_SECRET }}"       echo "✅ ProofGate enforcement active: Zero-Trust Verifier + QUITNLOCK deterministic locks"
