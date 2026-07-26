@@ -31,3 +31,16 @@ proofgate/
     ├── provenance/            # Curated screenshots and evidence
     ├── v1.0/.0                  # Initial ProofGate release
 `
+🔒 Enforcement Rules
+
+1. Capsule Lineage
+   - capsulemanifest.json, cidv1manifest.json, and dao_seals.json must always remain tracked.
+   - Immutable under MintProofDAO seal 436351437 and LedgerProofDAO seal 430.
+
+2. Digest Verification
+   - SHA‑256 and SHA‑512 digests must match expected values.
+   - CI/CD pipelines must run verify.sh on every commit.
+
+3. On‑Chain Proof
+   - Signature ID 320378 must be validated via Etherscan.
+   - Signing wallet 0x9e223F20022580739060d5511445C727f51Ee81e is canonical.
