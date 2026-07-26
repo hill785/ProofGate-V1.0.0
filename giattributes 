@@ -1,0 +1,31 @@
+# -----------------------------------------------------------------------------
+# ProofGate Source Control Guard Matrix
+# Enforces binary boundaries, strict line endings, and security overrides
+# -----------------------------------------------------------------------------
+
+# 1. Base Repository Line Endings Hardening (Blocks Cross-Platform Script Tampering)
+* text=auto eol=lf
+
+# 2. Strict Execution Scripts & Automation Enforcements
+*.sh text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+
+# 3. Source Infrastructure Optimization
+*.c text diff=cpp eol=lf
+*.h text diff=cpp eol=lf
+
+# 4. Fallback Matrix Isolation Controls
+# Prevents accidental commits of temporary concurrency leases if local path is triggered
+.swarm_lock_matrix/* binary -delta -merge
+.swarm_matrix.maintenance binary -delta -merge
+
+# 5. Compiled Security Target Guardrails
+# Ensures git recognizes compiled native artifacts as binaries to protect against corruption
+verify_capsule binary -delta -merge
+scripts/verify_capsule binary -delta -merge
+
+# 6. Cryptographic Footprint Controls
+expected.sha256 text eol=lf
+expected.sha512 text eol=lf
+capsule_manifest.json text eol=lf
