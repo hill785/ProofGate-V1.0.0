@@ -1,4 +1,5 @@
-#!/bin/bash
+verify_capsule.sh
+sh#!/bin/bash
 echo "🔒 ProofGate Local Verification"
 
 # --- Digest checks ---
